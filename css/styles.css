@@ -418,6 +418,10 @@ legend + * {
   clear: left;
 }
 
+.card{
+  border: none;
+}
+
 ::-webkit-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
