@@ -71,46 +71,94 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div class="form-floating">
                                 <input class="form-control" id="name" type="text" placeholder="Introduzca tu nombre..."
-                                    data-sb-validations="required" />
+                                    data-sb-validations="required" minlength="3"/>
                                 <label for="name">Nombre</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Este campo es
                                     obligatorio.</div>
                             </div>
                             <div class="form-floating">
                                 <input class="form-control" id="email" type="email" placeholder="Introduzca el email..."
-                                    data-sb-validations="required,email" />
+                                    data-sb-validations="required,email" minlength="3"/>
                                 <label for="email">Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Este campo es
                                     obligatorio.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no válido.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email no es valido.</div>
                             </div>
                             <div class="form-floating">
                                 <input class="form-control" id="phone" type="tel" placeholder="Introduzca el número..."
-                                    data-sb-validations="required" />
+                                    data-sb-validations="required" minlength="3" maxlength="9"/>
                                 <label for="phone">Móvil</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Este campo es
                                     obligatorio.</div>
                             </div>
                             <div class="form-floating">
                                 <textarea class="form-control" id="message" placeholder="Introduzca el mensaje..."
-                                    style="height: 12rem" data-sb-validations="required"></textarea>
+                                    style="height: 12rem" data-sb-validations="required"maxlength="300"></textarea>
                                 <label for="message">Mensaje</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Este campo es
                                     obligatorio.</div>
+                            </div> <br>
+                            <div class="form-floating">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                        required>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Soy mayor de edad.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-floating">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                        required>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Acepto las condiciones de la <a href="" data-bs-toggle="modal"data-bs-target="#exampleModal"> Política de privacidad</a>.
+                                    </label>
+                                </div>
                             </div>
                             <br />
+
+                            <!--modal privacidad-->
+
+                            <!-- Button trigger modal -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Política de privacidad</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            TITULAR te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web DIRECCIÓN-WEB.
+
+                                            En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).
+
+                                            El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
-                                    <div class="fw-bolder">¡Su mensaje ha sido enviado correctamente! Nuestro equipo se
-                                        pondrá en contacto con usted en breve.</div>
+                                    <div class="fw-bolder">Su mensaje ha sido enviado correctamente! Nuestro equipo se
+                                        pondría en contacto con ústed en breve.</div>
 
                                     <br />
                                 </div>
                             </div>
+
                             <!-- Submit error message-->
                             <!---->
                             <!-- This is what your users will see when there is-->
