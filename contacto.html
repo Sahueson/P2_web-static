@@ -33,15 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="servicios.html">Servicios</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="equipo.html">Equipo</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')" alt="Imagen de un teléfono antiguo." title="Imagen de un teléfono antiguo.">
+    <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')"
+        alt="Imagen de un teléfono antiguo." title="Imagen de un teléfono antiguo.">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
@@ -71,29 +72,34 @@
                         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <div class="form-floating">
                                 <input class="form-control" id="name" type="text" placeholder="Introduzca tu nombre..."
-                                    data-sb-validations="required" minlength="3"/>
+                                    data-sb-validations="required" minlength="3" />
                                 <label for="name">Nombre</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Este campo es
                                     obligatorio.</div>
                             </div>
                             <div class="form-floating">
                                 <input class="form-control" id="email" type="email" placeholder="Introduzca el email..."
-                                    data-sb-validations="required,email" minlength="3"/>
+                                    data-sb-validations="required,email" minlength="3" />
                                 <label for="email">Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">Este campo es
                                     obligatorio.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email no es valido.</div>
                             </div>
                             <div class="form-floating">
+
+                                <input class="form-control" id="phone" type="tel" placeholder="Introduzca el número..."
+                                    data-sb-validations="required" minlength="3" maxlength="9" />
+
                                 <input type="number" class="form-control" id="phone" placeholder="Introduzca el número..."
                                     data-sb-validations="required" minlength="3" maxlength="9"/>
+
                                 <label for="phone">Móvil</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">Este campo es
                                     obligatorio.</div>
                             </div>
                             <div class="form-floating">
                                 <textarea class="form-control" id="message" placeholder="Introduzca el mensaje..."
-                                    style="height: 12rem" data-sb-validations="required"maxlength="300"></textarea>
+                                    style="height: 12rem" data-sb-validations="required" maxlength="300"></textarea>
                                 <label for="message">Mensaje</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">Este campo es
                                     obligatorio.</div>
@@ -112,7 +118,8 @@
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
                                         required>
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Acepto las condiciones de la <a href="" data-bs-toggle="modal"data-bs-target="#exampleModal"> Política de privacidad</a>.
+                                        Acepto las condiciones de la <a href="" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"> Política de privacidad</a>.
                                     </label>
                                 </div>
                             </div>
@@ -133,11 +140,24 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
+
+                                            TITULAR te informa sobre su Política de Privacidad respecto del tratamiento
+                                            y protección de los datos de carácter personal de los usuarios y clientes
+                                            que puedan ser recabados por la navegación o contratación de servicios a
+                                            través del sitio Web DIRECCIÓN-WEB.
+
                                             LucAPI te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web.
 
-                                            En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).
 
-                                            El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.
+                                            En este sentido, el Titular garantiza el cumplimiento de la normativa
+                                            vigente en materia de protección de datos personales, reflejada en la Ley
+                                            Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de
+                                            Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento
+                                            (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016
+                                            relativo a la protección de las personas físicas (RGPD).
+
+                                            El uso de sitio Web implica la aceptación de esta Política de Privacidad así
+                                            como las condiciones incluidas en el Aviso Legal.
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -206,7 +226,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
+                    <div class="small text-center text-muted fst-italic">Copyright &copy; LucAPI 2022</div>
                 </div>
             </div>
         </div>
