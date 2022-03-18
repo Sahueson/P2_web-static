@@ -7,9 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
     const mainNav = document.getElementById('mainNav');
     const headerHeight = mainNav.clientHeight;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
+        if (currentTop < scrollPos) {
             // Scrolling Up
             if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
                 mainNav.classList.add('is-visible');
@@ -27,3 +27,33 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
+
+function mostrarMensaje() {
+
+    var mensaje = document.getElementById("mensaje");
+    var c1 = document.getElementById("check1");
+    var c2 = document.getElementById("check2");
+
+    if (c1.checked == true && c2.checked == true && mensaje != null) {
+
+        document.getElementById("miNombre").innerHTML = document.getElementById("nombre").value;
+        document.getElementById("misApellidos").innerHTML = document.getElementById("apellidos").value;
+        document.getElementById("miEmail").innerHTML = document.getElementById("email").value;
+        document.getElementById("miTel").innerHTML = document.getElementById("telefono").value;
+        document.getElementById("miMensaje").innerHTML = document.getElementById("mensaje").value;
+
+        document.getElementById("botonEnviar").disabled = true;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
